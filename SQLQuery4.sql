@@ -1,0 +1,6 @@
+﻿CREATE TABLE Tasks (
+    TaskID INT PRIMARY KEY IDENTITY(1,1),
+    ProjectID INT FOREIGN KEY REFERENCES Projects(ProjectID),
+    TaskName NVARCHAR(255) NOT NULL,
+    Progress NVARCHAR(100) DEFAULT('')
+);

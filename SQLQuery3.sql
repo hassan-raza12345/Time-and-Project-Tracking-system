@@ -1,0 +1,4 @@
+﻿CREATE TABLE Projects (
+    ProjectID INT PRIMARY KEY IDENTITY(1,1),
+    ProjectName NVARCHAR(255) NOT NULL
+);
